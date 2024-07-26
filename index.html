@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-black">
+
+    <header>
+        <!--Spinner-->
+        <div class="spiner fixed top-0 left-0 bottom-0 right-0 z-[9999] bg-black">
+            <div class="sk-chase flex justify-center items-center">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+        <!--Spinner-->
+    
+        <!-- sideNav -->
+        <section id="sideNav" class="flex h-screen fixed top-0 left-0 bottom-0 z-50">
+
+            <div class="nav-tab bg-black flex flex-col justify-between px-6 py-8">
+                <div class="links">
+                    <ul>
+                        <li class="loading pb-4">
+                            <a onclick="showSearchInput()" class="text-white "  href="#search">Search</a>
+                        </li>
+                        <li class="pb-4">
+                            <a onclick="getCategoryData()" class="text-white" href="#categories">Categories</a>
+                        </li>
+                        <li class="pb-4">
+                            <a onclick="getAreaData()" class="text-white" href="#area">Area</a>
+                        </li>
+                        <li class="pb-4">
+                            <a onclick="getIngredientsData()" class="text-white" href="#ingredients">Ingredients</a>
+                        </li>
+                        <li class="pb-4">
+                            <a onclick="getContactUs()" class="text-white" href="#contact us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-footer text-white pb-2">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-inner bg-white py-5 px-2 flex flex-col justify-between items-center">
+                <img class="logo " src="image/logo.png" alt="logo">
+                <i id="barsIcon" class=" fa-solid open-close-icon fa-2x fa-align-justify cursor-pointer" ></i>
+                <i id="closeIcon" class="hidden fa-solid open-close-icon fa-2x fa-x cursor-pointer"></i>
+                <div class="flex flex-col items-center">
+                    <a href="#"><i class="fa-solid fa-globe d-block"></i></a>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                </div>
+            </div>
+            
+        </section>
+
+        
+        <section class="w-[85vw] mx-auto mt-8 ">
+            <div id="rowData" class="flex flex-wrap md:pl-0 pl-14">
+                
+
+            </div>
+        </section>
+        
+        
+    </header>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
